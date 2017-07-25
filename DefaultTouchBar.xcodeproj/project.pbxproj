@@ -1,0 +1,308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE5A018C1F273449006560E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5A018B1F273449006560E8 /* AppDelegate.m */; };
+		EE5A018F1F273449006560E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5A018E1F273449006560E8 /* main.m */; };
+		EE5A01921F273449006560E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5A01911F273449006560E8 /* ViewController.m */; };
+		EE5A01941F273449006560E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE5A01931F273449006560E8 /* Assets.xcassets */; };
+		EE5A01971F273449006560E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE5A01951F273449006560E8 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EE5A01871F273449006560E8 /* DefaultTouchBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DefaultTouchBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE5A018A1F273449006560E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EE5A018B1F273449006560E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EE5A018E1F273449006560E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EE5A01901F273449006560E8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EE5A01911F273449006560E8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EE5A01931F273449006560E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE5A01961F273449006560E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE5A01981F273449006560E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE5A01841F273449006560E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE5A017E1F273449006560E8 = {
+			isa = PBXGroup;
+			children = (
+				EE5A01891F273449006560E8 /* DefaultTouchBar */,
+				EE5A01881F273449006560E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE5A01881F273449006560E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE5A01871F273449006560E8 /* DefaultTouchBar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE5A01891F273449006560E8 /* DefaultTouchBar */ = {
+			isa = PBXGroup;
+			children = (
+				EE5A018A1F273449006560E8 /* AppDelegate.h */,
+				EE5A018B1F273449006560E8 /* AppDelegate.m */,
+				EE5A01901F273449006560E8 /* ViewController.h */,
+				EE5A01911F273449006560E8 /* ViewController.m */,
+				EE5A01931F273449006560E8 /* Assets.xcassets */,
+				EE5A01951F273449006560E8 /* Main.storyboard */,
+				EE5A01981F273449006560E8 /* Info.plist */,
+				EE5A018D1F273449006560E8 /* Supporting Files */,
+			);
+			path = DefaultTouchBar;
+			sourceTree = "<group>";
+		};
+		EE5A018D1F273449006560E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE5A018E1F273449006560E8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE5A01861F273449006560E8 /* DefaultTouchBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE5A019B1F273449006560E8 /* Build configuration list for PBXNativeTarget "DefaultTouchBar" */;
+			buildPhases = (
+				EE5A01831F273449006560E8 /* Sources */,
+				EE5A01841F273449006560E8 /* Frameworks */,
+				EE5A01851F273449006560E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DefaultTouchBar;
+			productName = DefaultTouchBar;
+			productReference = EE5A01871F273449006560E8 /* DefaultTouchBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE5A017F1F273449006560E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = lonord;
+				TargetAttributes = {
+					EE5A01861F273449006560E8 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 4957ZWXF2W;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EE5A01821F273449006560E8 /* Build configuration list for PBXProject "DefaultTouchBar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE5A017E1F273449006560E8;
+			productRefGroup = EE5A01881F273449006560E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE5A01861F273449006560E8 /* DefaultTouchBar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE5A01851F273449006560E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE5A01941F273449006560E8 /* Assets.xcassets in Resources */,
+				EE5A01971F273449006560E8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE5A01831F273449006560E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE5A01921F273449006560E8 /* ViewController.m in Sources */,
+				EE5A018F1F273449006560E8 /* main.m in Sources */,
+				EE5A018C1F273449006560E8 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EE5A01951F273449006560E8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE5A01961F273449006560E8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE5A01991F273449006560E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		EE5A019A1F273449006560E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EE5A019C1F273449006560E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4957ZWXF2W;
+				INFOPLIST_FILE = DefaultTouchBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = name.lonord.DefaultTouchBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EE5A019D1F273449006560E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4957ZWXF2W;
+				INFOPLIST_FILE = DefaultTouchBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = name.lonord.DefaultTouchBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE5A01821F273449006560E8 /* Build configuration list for PBXProject "DefaultTouchBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE5A01991F273449006560E8 /* Debug */,
+				EE5A019A1F273449006560E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE5A019B1F273449006560E8 /* Build configuration list for PBXNativeTarget "DefaultTouchBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE5A019C1F273449006560E8 /* Debug */,
+				EE5A019D1F273449006560E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE5A017F1F273449006560E8 /* Project object */;
+}
