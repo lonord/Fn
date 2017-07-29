@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  TouchBarController.h
 //  DefaultTouchBar
 //
-//  Created by lonord on 2017/7/25.
+//  Created by lonord on 2017/7/29.
 //  Copyright © 2017年 lonord. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>
 
-@interface ViewController : NSViewController
-
+@interface TouchBarController : NSViewController
 
 @end
-
