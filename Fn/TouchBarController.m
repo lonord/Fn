@@ -82,6 +82,7 @@
         NSStoryboard* settingStoryBoard = [NSStoryboard storyboardWithName:@"Setting" bundle:nil];
         self.settingController = [settingStoryBoard instantiateInitialController];
     }
+    [NSApp activateIgnoringOtherApps:YES];
     [self.settingController.window makeKeyAndOrderFront:nil];
 }
 

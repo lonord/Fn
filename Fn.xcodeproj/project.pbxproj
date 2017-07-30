@@ -13,10 +13,10 @@
 		EE5A018F1F273449006560E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5A018E1F273449006560E8 /* main.m */; };
 		EE5A01941F273449006560E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE5A01931F273449006560E8 /* Assets.xcassets */; };
 		EEC49A751F2C505A003892F4 /* TouchBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC49A741F2C505A003892F4 /* TouchBarController.m */; };
-		EECC9D821F2CE09A00D05956 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECC9D811F2CE09A00D05956 /* Setting.storyboard */; };
 		EECC9D871F2CE37900D05956 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EECC9D861F2CE37900D05956 /* SettingViewController.m */; };
 		EECC9D8A1F2CE3A300D05956 /* SettingWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = EECC9D891F2CE3A300D05956 /* SettingWindowController.m */; };
 		EECC9D8E1F2D85F100D05956 /* StorageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EECC9D8D1F2D85F100D05956 /* StorageHelper.m */; };
+		EED95A8D1F2E13C2000B326C /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED95A8F1F2E13C2000B326C /* Setting.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,13 +31,14 @@
 		EE5A01981F273449006560E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEC49A731F2C505A003892F4 /* TouchBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchBarController.h; sourceTree = "<group>"; };
 		EEC49A741F2C505A003892F4 /* TouchBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchBarController.m; sourceTree = "<group>"; };
-		EECC9D811F2CE09A00D05956 /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		EECC9D851F2CE37900D05956 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		EECC9D861F2CE37900D05956 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		EECC9D881F2CE3A300D05956 /* SettingWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingWindowController.h; sourceTree = "<group>"; };
 		EECC9D891F2CE3A300D05956 /* SettingWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingWindowController.m; sourceTree = "<group>"; };
 		EECC9D8C1F2D85F100D05956 /* StorageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageHelper.h; sourceTree = "<group>"; };
 		EECC9D8D1F2D85F100D05956 /* StorageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageHelper.m; sourceTree = "<group>"; };
+		EED95A8E1F2E13C2000B326C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Setting.storyboard; sourceTree = "<group>"; };
+		EED95A921F2E13DE000B326C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/Setting.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +90,7 @@
 				EE5A01981F273449006560E8 /* Info.plist */,
 				EE5A018D1F273449006560E8 /* Supporting Files */,
 			);
-			name = Fn;
-			path = DefaultTouchBar;
+			path = Fn;
 			sourceTree = "<group>";
 		};
 		EE5A018D1F273449006560E8 /* Supporting Files */ = {
@@ -115,7 +115,7 @@
 		EECC9D841F2CE2FE00D05956 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				EECC9D811F2CE09A00D05956 /* Setting.storyboard */,
+				EED95A8F1F2E13C2000B326C /* Setting.storyboard */,
 				EECC9D851F2CE37900D05956 /* SettingViewController.h */,
 				EECC9D861F2CE37900D05956 /* SettingViewController.m */,
 				EECC9D881F2CE3A300D05956 /* SettingWindowController.h */,
@@ -149,7 +149,7 @@
 			dependencies = (
 			);
 			name = Fn;
-			productName = DefaultTouchBar;
+			productName = Fn;
 			productReference = EE5A01871F273449006560E8 /* Fn.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -176,6 +176,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = EE5A017E1F273449006560E8;
 			productRefGroup = EE5A01881F273449006560E8 /* Products */;
@@ -194,7 +195,7 @@
 			files = (
 				EE14C61E1F2A7BE200CC84E7 /* TouchBar.storyboard in Resources */,
 				EE5A01941F273449006560E8 /* Assets.xcassets in Resources */,
-				EECC9D821F2CE09A00D05956 /* Setting.storyboard in Resources */,
+				EED95A8D1F2E13C2000B326C /* Setting.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,11 +217,24 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		EED95A8F1F2E13C2000B326C /* Setting.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EED95A8E1F2E13C2000B326C /* en */,
+				EED95A921F2E13DE000B326C /* zh-Hans */,
+			);
+			name = Setting.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		EE5A01991F273449006560E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -269,6 +283,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -316,7 +331,7 @@
 					"$(inherited)",
 					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
 				);
-				INFOPLIST_FILE = DefaultTouchBar/Info.plist;
+				INFOPLIST_FILE = Fn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = name.lonord.Fn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -333,7 +348,7 @@
 					"$(inherited)",
 					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
 				);
-				INFOPLIST_FILE = DefaultTouchBar/Info.plist;
+				INFOPLIST_FILE = Fn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = name.lonord.Fn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
