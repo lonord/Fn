@@ -23,7 +23,7 @@
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <view translatesAutoresizingMaskIntoConstraints="NO" id="KI4-1B-h52">
-                                                    <rect key="frame" x="0.0" y="0.0" width="930" height="30"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="980" height="30"/>
                                                     <subviews>
                                                         <button verticalHuggingPriority="750" tag="1001" translatesAutoresizingMaskIntoConstraints="NO" id="tva-5q-se1">
                                                             <rect key="frame" x="0.0" y="0.0" width="60" height="30"/>
@@ -193,13 +193,27 @@
                                                                 <action selector="fnClick:" target="Gbj-xT-o9B" id="Kkn-PH-rfP"/>
                                                             </connections>
                                                         </button>
+                                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Rpz-sV-mtp">
+                                                            <rect key="frame" x="852" y="0.0" width="60" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="60" id="Bme-ta-nPs"/>
+                                                                <constraint firstAttribute="height" constant="30" id="Tor-SM-gWi"/>
+                                                            </constraints>
+                                                            <buttonCell key="cell" type="push" title="Setting" bezelStyle="rounded" image="Setting" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nMn-kW-uNO">
+                                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                <font key="font" metaFont="system"/>
+                                                            </buttonCell>
+                                                            <connections>
+                                                                <action selector="settingClick:" target="Gbj-xT-o9B" id="yf8-Dl-Zc5"/>
+                                                            </connections>
+                                                        </button>
                                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0Pi-oN-hX1">
-                                                            <rect key="frame" x="870" y="0.0" width="60" height="30"/>
+                                                            <rect key="frame" x="920" y="0.0" width="60" height="30"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="30" id="2sH-AQ-ovy"/>
                                                                 <constraint firstAttribute="width" constant="60" id="zVZ-Oz-VQ2"/>
                                                             </constraints>
-                                                            <buttonCell key="cell" type="push" title="Exit" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Bkp-Mn-7Qb">
+                                                            <buttonCell key="cell" type="push" title="Exit" bezelStyle="rounded" image="Exit" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Bkp-Mn-7Qb">
                                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                 <font key="font" metaFont="system" size="15"/>
                                                             </buttonCell>
@@ -218,6 +232,7 @@
                                                         <constraint firstItem="tva-5q-se1" firstAttribute="top" secondItem="KI4-1B-h52" secondAttribute="top" id="Eqc-sc-ZCh"/>
                                                         <constraint firstItem="9qE-HL-3t5" firstAttribute="leading" secondItem="QHN-fu-A6d" secondAttribute="trailing" constant="8" id="Gso-ka-odf"/>
                                                         <constraint firstItem="i5S-JK-sTt" firstAttribute="leading" secondItem="Wwx-cF-ru9" secondAttribute="trailing" constant="8" id="HIB-Qj-1mg"/>
+                                                        <constraint firstItem="Rpz-sV-mtp" firstAttribute="top" secondItem="KI4-1B-h52" secondAttribute="top" id="Iqy-Es-j4W"/>
                                                         <constraint firstItem="Wwx-cF-ru9" firstAttribute="top" secondItem="KI4-1B-h52" secondAttribute="top" id="J2W-Na-IGM"/>
                                                         <constraint firstItem="QHN-fu-A6d" firstAttribute="leading" secondItem="dXv-r6-GrC" secondAttribute="trailing" constant="8" id="Krg-AA-Uuc"/>
                                                         <constraint firstItem="NOk-BT-9DP" firstAttribute="leading" secondItem="tva-5q-se1" secondAttribute="trailing" constant="8" id="LiH-W7-Q5T"/>
@@ -231,7 +246,8 @@
                                                         <constraint firstItem="Fe8-cR-80y" firstAttribute="leading" secondItem="TzE-ej-ZLu" secondAttribute="trailing" constant="8" id="eD9-6b-MQk"/>
                                                         <constraint firstItem="gx7-EB-SPn" firstAttribute="leading" secondItem="Pq9-WN-AhI" secondAttribute="trailing" constant="8" id="fjf-8E-sQJ"/>
                                                         <constraint firstItem="tva-5q-se1" firstAttribute="leading" secondItem="KI4-1B-h52" secondAttribute="leading" id="o20-QJ-eGm"/>
-                                                        <constraint firstAttribute="width" constant="930" id="oeP-EI-ZDe"/>
+                                                        <constraint firstAttribute="width" constant="980" id="oeP-EI-ZDe"/>
+                                                        <constraint firstItem="0Pi-oN-hX1" firstAttribute="leading" secondItem="Rpz-sV-mtp" secondAttribute="trailing" constant="8" id="pOP-Ob-yfL"/>
                                                         <constraint firstItem="i5S-JK-sTt" firstAttribute="top" secondItem="KI4-1B-h52" secondAttribute="top" id="pPM-L6-lsq"/>
                                                         <constraint firstItem="Cl0-Yu-Vdd" firstAttribute="top" secondItem="KI4-1B-h52" secondAttribute="top" id="xJ4-IQ-2ow"/>
                                                         <constraint firstItem="gx7-EB-SPn" firstAttribute="top" secondItem="KI4-1B-h52" secondAttribute="top" id="ydD-LO-Gh6"/>
@@ -265,4 +281,8 @@
             <point key="canvasLocation" x="213" y="15"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Exit" width="240" height="240"/>
+        <image name="Setting" width="240" height="240"/>
+    </resources>
 </document>

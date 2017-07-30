@@ -13,6 +13,10 @@
 		EE5A018F1F273449006560E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5A018E1F273449006560E8 /* main.m */; };
 		EE5A01941F273449006560E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE5A01931F273449006560E8 /* Assets.xcassets */; };
 		EEC49A751F2C505A003892F4 /* TouchBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC49A741F2C505A003892F4 /* TouchBarController.m */; };
+		EECC9D821F2CE09A00D05956 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECC9D811F2CE09A00D05956 /* Setting.storyboard */; };
+		EECC9D871F2CE37900D05956 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EECC9D861F2CE37900D05956 /* SettingViewController.m */; };
+		EECC9D8A1F2CE3A300D05956 /* SettingWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = EECC9D891F2CE3A300D05956 /* SettingWindowController.m */; };
+		EECC9D8E1F2D85F100D05956 /* StorageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EECC9D8D1F2D85F100D05956 /* StorageHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,13 @@
 		EE5A01981F273449006560E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEC49A731F2C505A003892F4 /* TouchBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchBarController.h; sourceTree = "<group>"; };
 		EEC49A741F2C505A003892F4 /* TouchBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchBarController.m; sourceTree = "<group>"; };
+		EECC9D811F2CE09A00D05956 /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		EECC9D851F2CE37900D05956 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		EECC9D861F2CE37900D05956 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		EECC9D881F2CE3A300D05956 /* SettingWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingWindowController.h; sourceTree = "<group>"; };
+		EECC9D891F2CE3A300D05956 /* SettingWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingWindowController.m; sourceTree = "<group>"; };
+		EECC9D8C1F2D85F100D05956 /* StorageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageHelper.h; sourceTree = "<group>"; };
+		EECC9D8D1F2D85F100D05956 /* StorageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,15 +80,14 @@
 		EE5A01891F273449006560E8 /* Fn */ = {
 			isa = PBXGroup;
 			children = (
-				EE14C6191F28726D00CC84E7 /* TouchBar.h */,
+				EECC9D8B1F2D85D800D05956 /* storage */,
+				EECC9D841F2CE2FE00D05956 /* Setting */,
+				EECC9D831F2CE2E700D05956 /* TouchBar */,
 				EE5A018A1F273449006560E8 /* AppDelegate.h */,
 				EE5A018B1F273449006560E8 /* AppDelegate.m */,
 				EE5A01931F273449006560E8 /* Assets.xcassets */,
 				EE5A01981F273449006560E8 /* Info.plist */,
 				EE5A018D1F273449006560E8 /* Supporting Files */,
-				EE14C61D1F2A7BE200CC84E7 /* TouchBar.storyboard */,
-				EEC49A731F2C505A003892F4 /* TouchBarController.h */,
-				EEC49A741F2C505A003892F4 /* TouchBarController.m */,
 			);
 			name = Fn;
 			path = DefaultTouchBar;
@@ -89,6 +99,38 @@
 				EE5A018E1F273449006560E8 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EECC9D831F2CE2E700D05956 /* TouchBar */ = {
+			isa = PBXGroup;
+			children = (
+				EE14C6191F28726D00CC84E7 /* TouchBar.h */,
+				EE14C61D1F2A7BE200CC84E7 /* TouchBar.storyboard */,
+				EEC49A731F2C505A003892F4 /* TouchBarController.h */,
+				EEC49A741F2C505A003892F4 /* TouchBarController.m */,
+			);
+			name = TouchBar;
+			sourceTree = "<group>";
+		};
+		EECC9D841F2CE2FE00D05956 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				EECC9D811F2CE09A00D05956 /* Setting.storyboard */,
+				EECC9D851F2CE37900D05956 /* SettingViewController.h */,
+				EECC9D861F2CE37900D05956 /* SettingViewController.m */,
+				EECC9D881F2CE3A300D05956 /* SettingWindowController.h */,
+				EECC9D891F2CE3A300D05956 /* SettingWindowController.m */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
+		EECC9D8B1F2D85D800D05956 /* storage */ = {
+			isa = PBXGroup;
+			children = (
+				EECC9D8C1F2D85F100D05956 /* StorageHelper.h */,
+				EECC9D8D1F2D85F100D05956 /* StorageHelper.m */,
+			);
+			name = storage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +194,7 @@
 			files = (
 				EE14C61E1F2A7BE200CC84E7 /* TouchBar.storyboard in Resources */,
 				EE5A01941F273449006560E8 /* Assets.xcassets in Resources */,
+				EECC9D821F2CE09A00D05956 /* Setting.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,9 +205,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EECC9D8A1F2CE3A300D05956 /* SettingWindowController.m in Sources */,
 				EE5A018F1F273449006560E8 /* main.m in Sources */,
 				EE5A018C1F273449006560E8 /* AppDelegate.m in Sources */,
+				EECC9D8E1F2D85F100D05956 /* StorageHelper.m in Sources */,
 				EEC49A751F2C505A003892F4 /* TouchBarController.m in Sources */,
+				EECC9D871F2CE37900D05956 /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

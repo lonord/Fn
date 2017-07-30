@@ -10,6 +10,8 @@
 
 @interface TouchBarController ()
 
+@property(nonatomic) NSWindowController* settingController;
+
 @end
 
 @implementation TouchBarController
@@ -73,6 +75,14 @@
         CFRelease(eventDown);
         CFRelease(eventUp);
     });
+}
+
+- (IBAction)settingClick:(id)sender {
+    if (self.settingController == nil) {
+        NSStoryboard* settingStoryBoard = [NSStoryboard storyboardWithName:@"Setting" bundle:nil];
+        self.settingController = [settingStoryBoard instantiateInitialController];
+    }
+    [self.settingController.window makeKeyAndOrderFront:nil];
 }
 
 - (IBAction)exitClick:(id)sender {
