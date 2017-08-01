@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2104" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="Gbj-xT-o9B">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="Gbj-xT-o9B">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaDFRPlugin" version="12062"/>
@@ -23,10 +23,24 @@
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <view translatesAutoresizingMaskIntoConstraints="NO" id="KI4-1B-h52">
-                                                    <rect key="frame" x="0.0" y="0.0" width="980" height="30"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="1055" height="30"/>
                                                     <subviews>
+                                                        <button verticalHuggingPriority="750" tag="1001" translatesAutoresizingMaskIntoConstraints="NO" id="PkP-xs-bFy">
+                                                            <rect key="frame" x="-0.5" y="0.0" width="60" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="60" id="0kn-VM-ZLe"/>
+                                                                <constraint firstAttribute="height" constant="30" id="CE3-9z-YX3"/>
+                                                            </constraints>
+                                                            <buttonCell key="cell" type="push" title="esc" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Eeb-eU-KYs">
+                                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                <font key="font" metaFont="system" size="15"/>
+                                                            </buttonCell>
+                                                            <connections>
+                                                                <action selector="escClick:" target="Gbj-xT-o9B" id="4bk-oZ-BfZ"/>
+                                                            </connections>
+                                                        </button>
                                                         <button verticalHuggingPriority="750" tag="1001" translatesAutoresizingMaskIntoConstraints="NO" id="tva-5q-se1">
-                                                            <rect key="frame" x="0.0" y="0.0" width="60" height="30"/>
+                                                            <rect key="frame" x="75" y="0.0" width="60" height="30"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="60" id="HaR-AE-rBQ"/>
                                                                 <constraint firstAttribute="height" constant="30" id="h3o-tJ-4Z4"/>
@@ -40,7 +54,7 @@
                                                             </connections>
                                                         </button>
                                                         <button verticalHuggingPriority="750" tag="1002" translatesAutoresizingMaskIntoConstraints="NO" id="NOk-BT-9DP">
-                                                            <rect key="frame" x="68" y="0.0" width="60" height="30"/>
+                                                            <rect key="frame" x="143" y="0.0" width="60" height="30"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="30" id="DyC-KS-lCg"/>
                                                                 <constraint firstAttribute="width" constant="60" id="iSj-0A-iBH"/>
@@ -54,7 +68,7 @@
                                                             </connections>
                                                         </button>
                                                         <button verticalHuggingPriority="750" tag="1003" translatesAutoresizingMaskIntoConstraints="NO" id="Wwx-cF-ru9">
-                                                            <rect key="frame" x="136" y="0.0" width="60" height="30"/>
+                                                            <rect key="frame" x="211" y="0.0" width="60" height="30"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="30" id="DZE-sf-Zd0"/>
                                                                 <constraint firstAttribute="width" constant="60" id="dEG-Jp-0jl"/>
@@ -68,7 +82,7 @@
                                                             </connections>
                                                         </button>
                                                         <button verticalHuggingPriority="750" tag="1004" translatesAutoresizingMaskIntoConstraints="NO" id="i5S-JK-sTt">
-                                                            <rect key="frame" x="204" y="0.0" width="60" height="30"/>
+                                                            <rect key="frame" x="279" y="0.0" width="60" height="30"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="30" id="lIC-EM-Jkd"/>
                                                                 <constraint firstAttribute="width" constant="60" id="sOT-ht-PJk"/>
@@ -82,7 +96,7 @@
                                                             </connections>
                                                         </button>
                                                         <button verticalHuggingPriority="750" tag="1005" translatesAutoresizingMaskIntoConstraints="NO" id="Cl0-Yu-Vdd">
-                                                            <rect key="frame" x="272" y="0.0" width="60" height="30"/>
+                                                            <rect key="frame" x="347" y="0.0" width="60" height="30"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="30" id="GYO-Au-mK5"/>
                                                                 <constraint firstAttribute="width" constant="60" id="VIx-24-SnB"/>
@@ -96,7 +110,7 @@
                                                             </connections>
                                                         </button>
                                                         <button verticalHuggingPriority="750" tag="1006" translatesAutoresizingMaskIntoConstraints="NO" id="Pq9-WN-AhI">
-                                                            <rect key="frame" x="340" y="0.0" width="60" height="30"/>
+                                                            <rect key="frame" x="415" y="0.0" width="60" height="30"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="60" id="KiN-JM-8mV"/>
                                                                 <constraint firstAttribute="height" constant="30" id="qC6-zS-RUO"/>
@@ -110,7 +124,7 @@
                                                             </connections>
                                                         </button>
                                                         <button verticalHuggingPriority="750" tag="1007" translatesAutoresizingMaskIntoConstraints="NO" id="gx7-EB-SPn">
-                                                            <rect key="frame" x="408" y="0.0" width="60" height="30"/>
+                                                            <rect key="frame" x="483" y="0.0" width="60" height="30"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="60" id="AIt-qg-J16"/>
                                                                 <constraint firstAttribute="height" constant="30" id="VdI-d2-bhc"/>
@@ -124,7 +138,7 @@
                                                             </connections>
                                                         </button>
                                                         <button verticalHuggingPriority="750" tag="1008" translatesAutoresizingMaskIntoConstraints="NO" id="dXv-r6-GrC">
-                                                            <rect key="frame" x="476" y="0.0" width="60" height="30"/>
+                                                            <rect key="frame" x="551" y="0.0" width="60" height="30"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="30" id="ZOK-lJ-2mG"/>
                                                                 <constraint firstAttribute="width" constant="60" id="vFu-bp-sMg"/>
@@ -138,7 +152,7 @@
                                                             </connections>
                                                         </button>
                                                         <button verticalHuggingPriority="750" tag="1009" translatesAutoresizingMaskIntoConstraints="NO" id="QHN-fu-A6d">
-                                                            <rect key="frame" x="544" y="0.0" width="60" height="30"/>
+                                                            <rect key="frame" x="619" y="0.0" width="60" height="30"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="30" id="RLv-g2-2gU"/>
                                                                 <constraint firstAttribute="width" constant="60" id="lHm-gl-kRM"/>
@@ -152,7 +166,7 @@
                                                             </connections>
                                                         </button>
                                                         <button verticalHuggingPriority="750" tag="1010" translatesAutoresizingMaskIntoConstraints="NO" id="9qE-HL-3t5">
-                                                            <rect key="frame" x="612" y="0.0" width="60" height="30"/>
+                                                            <rect key="frame" x="687" y="0.0" width="60" height="30"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="60" id="L6K-3N-eA2"/>
                                                                 <constraint firstAttribute="height" constant="30" id="any-1N-1hq"/>
@@ -166,7 +180,7 @@
                                                             </connections>
                                                         </button>
                                                         <button verticalHuggingPriority="750" tag="1011" translatesAutoresizingMaskIntoConstraints="NO" id="TzE-ej-ZLu">
-                                                            <rect key="frame" x="680" y="0.0" width="60" height="30"/>
+                                                            <rect key="frame" x="755" y="0.0" width="60" height="30"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="30" id="7Dm-c7-VSw"/>
                                                                 <constraint firstAttribute="width" constant="60" id="Lal-pP-HwU"/>
@@ -180,7 +194,7 @@
                                                             </connections>
                                                         </button>
                                                         <button verticalHuggingPriority="750" tag="1012" translatesAutoresizingMaskIntoConstraints="NO" id="Fe8-cR-80y">
-                                                            <rect key="frame" x="748" y="0.0" width="60" height="30"/>
+                                                            <rect key="frame" x="823" y="0.0" width="60" height="30"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="60" id="BGo-Wf-h7W"/>
                                                                 <constraint firstAttribute="height" constant="30" id="v3f-hQ-z6c"/>
@@ -194,7 +208,7 @@
                                                             </connections>
                                                         </button>
                                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Rpz-sV-mtp">
-                                                            <rect key="frame" x="852" y="0.0" width="60" height="30"/>
+                                                            <rect key="frame" x="927" y="0.0" width="60" height="30"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="60" id="Bme-ta-nPs"/>
                                                                 <constraint firstAttribute="height" constant="30" id="Tor-SM-gWi"/>
@@ -208,7 +222,7 @@
                                                             </connections>
                                                         </button>
                                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0Pi-oN-hX1">
-                                                            <rect key="frame" x="920" y="0.0" width="60" height="30"/>
+                                                            <rect key="frame" x="995" y="0.0" width="60" height="30"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="30" id="2sH-AQ-ovy"/>
                                                                 <constraint firstAttribute="width" constant="60" id="zVZ-Oz-VQ2"/>
@@ -230,6 +244,7 @@
                                                         <constraint firstItem="Pq9-WN-AhI" firstAttribute="top" secondItem="KI4-1B-h52" secondAttribute="top" id="6i0-J9-U0B"/>
                                                         <constraint firstItem="9qE-HL-3t5" firstAttribute="top" secondItem="KI4-1B-h52" secondAttribute="top" id="7AO-nX-j5e"/>
                                                         <constraint firstItem="tva-5q-se1" firstAttribute="top" secondItem="KI4-1B-h52" secondAttribute="top" id="Eqc-sc-ZCh"/>
+                                                        <constraint firstItem="PkP-xs-bFy" firstAttribute="leading" secondItem="KI4-1B-h52" secondAttribute="leading" id="Eya-lY-Bvv"/>
                                                         <constraint firstItem="9qE-HL-3t5" firstAttribute="leading" secondItem="QHN-fu-A6d" secondAttribute="trailing" constant="8" id="Gso-ka-odf"/>
                                                         <constraint firstItem="i5S-JK-sTt" firstAttribute="leading" secondItem="Wwx-cF-ru9" secondAttribute="trailing" constant="8" id="HIB-Qj-1mg"/>
                                                         <constraint firstItem="Rpz-sV-mtp" firstAttribute="top" secondItem="KI4-1B-h52" secondAttribute="top" id="Iqy-Es-j4W"/>
@@ -245,10 +260,11 @@
                                                         <constraint firstItem="Pq9-WN-AhI" firstAttribute="leading" secondItem="Cl0-Yu-Vdd" secondAttribute="trailing" constant="8" id="c87-hs-8d7"/>
                                                         <constraint firstItem="Fe8-cR-80y" firstAttribute="leading" secondItem="TzE-ej-ZLu" secondAttribute="trailing" constant="8" id="eD9-6b-MQk"/>
                                                         <constraint firstItem="gx7-EB-SPn" firstAttribute="leading" secondItem="Pq9-WN-AhI" secondAttribute="trailing" constant="8" id="fjf-8E-sQJ"/>
-                                                        <constraint firstItem="tva-5q-se1" firstAttribute="leading" secondItem="KI4-1B-h52" secondAttribute="leading" id="o20-QJ-eGm"/>
-                                                        <constraint firstAttribute="width" constant="980" id="oeP-EI-ZDe"/>
+                                                        <constraint firstItem="tva-5q-se1" firstAttribute="leading" secondItem="PkP-xs-bFy" secondAttribute="trailing" constant="15" id="kgn-eE-NA5"/>
+                                                        <constraint firstAttribute="width" constant="1055" id="oeP-EI-ZDe"/>
                                                         <constraint firstItem="0Pi-oN-hX1" firstAttribute="leading" secondItem="Rpz-sV-mtp" secondAttribute="trailing" constant="8" id="pOP-Ob-yfL"/>
                                                         <constraint firstItem="i5S-JK-sTt" firstAttribute="top" secondItem="KI4-1B-h52" secondAttribute="top" id="pPM-L6-lsq"/>
+                                                        <constraint firstItem="PkP-xs-bFy" firstAttribute="top" secondItem="KI4-1B-h52" secondAttribute="top" id="su8-Ab-epy"/>
                                                         <constraint firstItem="Cl0-Yu-Vdd" firstAttribute="top" secondItem="KI4-1B-h52" secondAttribute="top" id="xJ4-IQ-2ow"/>
                                                         <constraint firstItem="gx7-EB-SPn" firstAttribute="top" secondItem="KI4-1B-h52" secondAttribute="top" id="ydD-LO-Gh6"/>
                                                         <constraint firstItem="Fe8-cR-80y" firstAttribute="top" secondItem="KI4-1B-h52" secondAttribute="top" id="zto-c1-nXg"/>
@@ -275,6 +291,9 @@
                             </touchBarItem>
                         </touchBarItems>
                     </touchBar>
+                    <connections>
+                        <outlet property="escBtn" destination="PkP-xs-bFy" id="Iur-qK-1m8"/>
+                    </connections>
                 </viewController>
                 <customObject id="oHp-VF-wAT" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

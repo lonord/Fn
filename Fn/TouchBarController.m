@@ -11,13 +11,26 @@
 @interface TouchBarController ()
 
 @property(nonatomic) NSWindowController* settingController;
+@property (strong) IBOutlet NSButton *escBtn;
 
 @end
 
 @implementation TouchBarController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (id)initWithCoder:(NSCoder *)coder {
+    self = [super initWithCoder:coder];
+    if (self) {
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(100 * NSEC_PER_MSEC)), dispatch_get_main_queue(), ^{
+            [self.escBtn scrollPoint:NSMakePoint(70, 0)];
+        });
+        
+    }
+    return self;
+}
+
+- (IBAction)escClick:(id)sender {
+    [self pressKey:0x35];
 }
 
 - (IBAction)fnClick:(id)sender {
@@ -67,14 +80,7 @@
             return;
     }
     
-    CGEventRef eventDown = CGEventCreateKeyboardEvent(NULL, key, true);
-    CGEventRef eventUp = CGEventCreateKeyboardEvent(NULL, key, false);
-    CGEventPost(kCGHIDEventTap, eventDown);
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_MSEC)), dispatch_get_main_queue(), ^{
-        CGEventPost(kCGHIDEventTap, eventUp);
-        CFRelease(eventDown);
-        CFRelease(eventUp);
-    });
+    [self pressKey:key];
 }
 
 - (IBAction)settingClick:(id)sender {
@@ -88,6 +94,17 @@
 
 - (IBAction)exitClick:(id)sender {
     [[NSApplication sharedApplication] terminate:self];
+}
+
+- (void)pressKey:(CGKeyCode)key {
+    CGEventRef eventDown = CGEventCreateKeyboardEvent(NULL, key, true);
+    CGEventRef eventUp = CGEventCreateKeyboardEvent(NULL, key, false);
+    CGEventPost(kCGHIDEventTap, eventDown);
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_MSEC)), dispatch_get_main_queue(), ^{
+        CGEventPost(kCGHIDEventTap, eventUp);
+        CFRelease(eventDown);
+        CFRelease(eventUp);
+    });
 }
 
 @end
